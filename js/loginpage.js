@@ -1,5 +1,5 @@
 document.loginFrm.onsubmit = function(){
-    var users = JSON.parse(localStorage.getItem('users'))
+    var users = JSON.parse(localStorage.getItem('users'))||[]
     console.log(users);
 
     var $inputId = $("#input-id").val();
