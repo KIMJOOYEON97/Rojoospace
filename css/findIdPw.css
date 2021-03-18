@@ -1,0 +1,238 @@
+/* 초반에 기본 선택지 email*/
+/* .choiceRadio{
+    display: none;
+}  */
+div.choiceRadio{
+    display: none;
+}
+
+
+/* 장바구니 */
+aside .header_left{
+    /* display:inline-block; */
+    position: fixed;    
+    width: 2vw;
+    height: 80vh;
+    top: 40vh;
+    left: 6.5vw;
+}
+aside img{
+    width: 2vw;
+    
+}
+/* 오른쪽 메뉴바 */
+
+div header{
+    position: fixed;
+    display:inline-block;
+    top: 10vh;
+    left: 25vw;
+    /* float: left; */
+    /* background-color: lightgray; */
+    height: 15vh;
+    width: 3vw;
+    margin-left: 50vw;
+}
+
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  5px;
+    position: relative;
+}
+nav .closebox .front{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+nav .closebox .back{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+
+
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+/* footer info */
+.footerwrapper{
+    margin-top: 70vh; 
+    text-align: center;
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerwrapper li{
+    font-size: 0.1vw;
+}
+
+
+/* title */
+h3 {
+    border-left: 3px solid black;
+    color: black;
+    /* font-family: 'Bodoni Moda', serif; */
+}
+title ul,li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1vw ;
+}
+title li{
+    border-left: 3px solid black;
+    color: #2A4D47;
+    /* font-family: 'Bodoni Moda', serif; */
+    font-size: 0.5vw;
+}
+.title{
+    /* margin: 0 auto; */
+    margin-bottom: 10vh;
+    
+}
+
+/* id */
+#findId{
+    /* display: inline-block; */
+    position: fixed;
+    left: 25vw;
+    margin: 0 auto;
+    /* font-family: 'Bodoni Moda', serif; */
+    
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}
+
+
+
+.title li {
+    /* position: fixed; */
+    font-size: 0.8em;
+}
+
+
+/* pw */
+#findPw{
+    /* display: inline-block; */
+    position: fixed;
+    left: 25vw;
+    margin: 0 auto;
+    /* font-family: 'Bodoni Moda', serif; */
+    
+    /* text-align: center; */
+    border: 1px solid black;
+    width: 50vw;
+    height: 55vh;
+}
+
+#userId{
+    width: 10vw;
+    height: 2vh;
+}
+
+
+/* id pw 공통부분 */
+
+label{
+    /* font-family: 'Bodoni Moda', serif; */
+    font-size: 0.8vw;
+}
+
+h3{
+    padding-left: 3vw;
+    margin: 5vw 4vh;
+    margin-bottom: 4vh;
+}
+
+#usertype{
+    width: 17vw;
+    height: 3vh;
+    /* font-family: 'Bodoni Moda', serif; */
+    font-size: 0.7vw;
+    
+}
+
+#userName{
+    width: 10vw;
+    height: 2vh;
+}
+
+#userEmail{
+    width: 15vw;
+    height: 2vh;
+}
+
+#userPhone{
+    width: 4vw;
+    height: 2vh;
+}
+
+
+/*회원유형 */
+.member label{
+    margin-left: 10vw ;
+    
+}
+.member .check{
+    display: inline-block;
+}
+.member ~ div{
+    margin-left: 10vw ;
+    margin-top: 2vh;
+    
+}
+
+button{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    background-color: #2A4D47;
+    color: white;
+}
+button:hover{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    background-color: rgb(252,107,54);
+    color: black;
+}
+

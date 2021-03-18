@@ -1,0 +1,170 @@
+/* 전체 가운데 정렬 */
+.container{
+    text-align: center;
+}
+/* 장바구니 */
+aside .header_left{
+    /* display:inline-block; */
+    position: fixed;    
+    width: 2vw;
+    height: 80vh;
+    top: 40vh;
+    left: 6.5vw;
+}
+aside img{
+    width: 2vw;
+    
+}
+/* 오른쪽 메뉴 */
+div .login{
+    display:inline-block;
+}
+/* div .navwrapper하면 밑으로 내려가버림 */
+div header{
+    position: fixed;
+    display:inline-block;
+    /* float: left; */
+    height: 15vh;
+    width: 3vw;
+    /* background-color: blanchedalmond; */
+}
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+nav #menu a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  5px;
+    position: relative;
+}
+nav .closebox .front{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+nav .closebox .back{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+
+/* footer info */
+.footerwrapper{ 
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerwrapper li{
+    font-size: 0.1vw;
+}
+
+
+#requiredtitle{
+    margin-left: 100wv;
+    font-size: 0.5vw;
+}
+
+/* 테이블 입력란 */
+.boardWrite{
+    width: 70vw;
+    height: 60vh;
+    font-size: 0.7vw;
+}
+table{
+    margin: 5vh auto;
+    width: 60vw;
+    height: 45vh;
+}
+.boardWrite tr:first-child th, .boardWrite tr:first-child td {
+    border-top: 0;
+}
+.boardWrite th {
+    width: 14vw;
+    padding: 10px 0 8px 20px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.boardWrite td {
+    width: 50vw;
+    padding: 10px 0 8px 20px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+input{
+    height: 2vh;
+}
+
+
+button:hover{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 0;
+    background-color:rgb(252, 107, 54);
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+button{
+    width: 10vw;
+    height: 5vh;
+    margin-left: 0;
+    background-color: #2A4D47;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#email{
+    width: 20vw;
+}
+
+.phone{
+    width: 4vw;
+    height: 2vh;
+}

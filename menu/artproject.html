@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <link rel="stylesheet" href="../css/artproject.css">
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../js/artproject.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/pabiicon.ico" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  
+</head>
+
+
+<body>
+
+ <div class="wrapper">
+   <div class="panorama">
+   </div>
+ </div>
+
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+        <img class="demo cursor" src="../img/1art.png" style="width:100%">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/2art13.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/3art7.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/4art5.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/5art14.png" style="width:100%">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/6art11.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/7art12.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/8art4.png" style="width:100%" >
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="../img/9art3.png" style="width:100%">
+    </div>
+  </div>
+
+<script>
+/*Downloaded from https://www.codeseek.co/flanker/panorama-background-image-Boiwc */
+$(function () {
+
+var $panorama = $('.panorama');
+
+var left = $panorama.offset().left;
+var width = $panorama.width();
+
+$('.panorama').mousemove(function (e) {
+  var offset = e.pageX - left;
+  var percentage = offset / width * 100;
+
+  $panorama.css('background-position', percentage + '% 0');
+
+});
+
+});  
+</script>
+
+</body>
+
+</html>

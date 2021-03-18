@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>perfume demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/searchpopup.css">
+  <link rel="stylesheet" href="../css/perfume.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/pabiicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+
+<!-- 서치 팝업창 -->
+  <script src="../js/searchpop.js"></script>
+<!-- 커서 꾸미기용 테일 -->
+<!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script><script>
+      
+  var filter = "win16|win32|win64|mac|macintel";
+      
+      if ( navigator.platform )
+      { if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 )
+      { }
+          else {
+      
+  // var trailimage=["/artfinger/img/mouseicon.png",150]  //이미지 경로 설정 - 참고사항
+  var trailimage=["../img/cursoricon.png",150]  //이미지 경로 설정
+  var offsetfrommouse=[10,10]  //커서와 이미지의 간격
+  var displayduration=0 
+  
+  if (document.getElementById || document.all)
+      document.write('<div id="cursortailid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px;z-index:999999999999"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+  
+  function gettrailobj(){
+      if (document.getElementById)
+          return document.getElementById("cursortailid").style
+      else if (document.all)
+          return document.all.trailimagid.style
+  }
+  
+  function truebody(){
+      return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+  }
+  
+  function hidetrail(){
+      gettrailobj().visibility="hidden"
+      document.onmousemove=""
+  }
+  
+  function followmouse(e){
+  var xcoord=offsetfrommouse[0]
+  var ycoord=offsetfrommouse[1]
+      if (typeof e != "undefined"){
+          xcoord+=e.pageX
+          ycoord+=e.pageY
+      }
+      else if (typeof window.event !="undefined"){
+          xcoord+=truebody().scrollLeft+event.clientX
+          ycoord+=truebody().scrollTop+event.clientY
+      }
+  
+  var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+  var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+  
+      if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+          gettrailobj().display="none"
+          else 
+              gettrailobj().display=""
+              gettrailobj().left=xcoord+"px"
+              gettrailobj().top=ycoord+"px"
+      }
+      document.onmousemove=followmouse
+  
+  if (displayduration>0)
+      setTimeout("hidetrail()", displayduration*1000)
+              }}
+  
+  </script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body>
+  <!-- 커서 꾸미기용 테일 -->
+  <div id="cursortailid" style="position: absolute;visibility: visible; left: 200px; top: 526px; width: 1px; height: 1px; z-index: 999999999;">
+      <!-- <img src="./img/cursoricon.png" border="0" width="150px" height="undefinedpx"> -->
+  </div>
+  <aside>
+      <!-- 장바구니 -->
+      <div class="header_left" style="cursor: pointer;">
+          <a href="../shoppingbasket.html" id="basket_count"><img src="../img/shopping-basket.png" alt=""></a>
+      </div>
+  </aside>
+
+  <!-- 서치 팝업 -->
+  <div id="search_popup" class="hide">
+      <div class="search_popup">
+          <!-- 닫기버튼 -->
+          <img id ="closebutton" src="../img/close-button.png" alt="닫기" onclick="closePopup();">
+          <br>
+          <span>SEARCH</span>
+          
+          <div class="searchinner">
+              <!-- 검색폼 -->
+              <div>
+                  <form action="" id="searchBar" method="get" target="_self">
+                      <div class="searchBarWp">
+                          <div class="bar">
+                              <!-- <legend>검색</legend> -->
+                              <div class="barcenter">
+                                  <input type="text" id="searchword" placeholder="검색어를 입력해주세요">
+                                  <img id="searchicon" src="../img/searchwhite.png" alt="검색">
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+              <!-- 추천 검색어 슬라이드 -->
+              <div class="searchslide">
+                  <div><p><a href="">S/S Perfume</a></p></div>
+                  <div><p><a href="">Before 2020, ArtWork</a></p></div>
+                  <div><p><a href="">Today To Me, Perfume recommend</a></p></div>
+                  <div><p><a href="">What made her this way?</a></p></div>
+                  <div><p><a href="">Future Plan</a></p></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <section>
+        <br><br><br>
+        <div id="perfumehead">
+            <h2>Product under preparation, scheduled to open in 2022</h2>
+        </div>
+        <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+    <!-- into -->
+        <div class="swiper-slide">
+            <p class="perfume">Intro</p>
+            <img src="../img/perfumerojoo.png" style="width: 200px; height: 200px;">   
+            <div class="details">
+                <p>rojooperfume 향수에서 <br> 만날 수 있는 향을<br> 일상 생활 어디서든지 즐겨보세요.<br><br> 당신의 <mark>곁에 주로 </mark>남아있는<br> <mark>로주 퍼퓸</mark>.</p>
+                <p>Enjoy the fragrance you can find in rojooperfume perfume anywhere in your daily life. <br> The rojoo perfume that is mostly left by your side.</p>
+                <br><br><br>
+            </div>
+        </div>
+    <!-- 1 -->
+        <div class="swiper-slide">
+          <div class="box">
+            <p class="perfume">Minisize Perfume</p>    
+                <img src="../img/perfume1.png" class="model">
+                <!-- detail -->
+                <div class="details">
+                <br><br>
+                <p>The perfume comes in two capacities, 30ml and 50ml.</p> 
+                <br><br><br>
+                </div>
+            </div>
+        </div>
+    <!-- 2 -->
+        <div class="swiper-slide">
+            <div class="box">
+                <p class="perfume">Pure Perfume</p>    
+                <img src="../img/perfume2.png" class="model">
+                <!-- detail -->
+                <div class="details">
+                <p>
+                    <br><br>
+                    It is 100% perfume using only one fragrance. You can use the unique fragrance of carefully selected raw materials as it is.
+                    <br><br><br>
+                </p> 
+                
+                </div>
+            </div>
+        </div>
+    <!-- 3 -->
+        <div class="swiper-slide"> 
+            <div class="box">
+                <p class="perfume">Exclusive Perfume</p>    
+                <img src="../img/perfume3.png" class="model">
+                <!-- detail -->
+                <div class="details">
+                <br><br>
+                <p>It is a fragrance that can only be found in rojooperfume by blending various scents. Enjoy the rare and delicate scent trail.
+                <br><br><br>   
+                </p> 
+                </div>
+            </div>
+        </div>
+    <!-- 4 -->
+        <div class="swiper-slide">
+            <div class="box">
+                <p class="perfume">Diffuser</p>    
+                <img src="../img/perfume4.png" class="model">
+                <!-- detail -->
+                <div class="details">
+                <br><br>
+                <p>It is recommended for those who want to enjoy the fragrance anytime, anywhere. Or when you want to replace smell with scent.
+                <br><br><br>   
+                </p> 
+                </div>
+            </div>
+        </div>
+    <!-- 5 -->
+        <div class="swiper-slide">
+            <div class="box">
+                <p class="perfume">Todat To Me <br>Perfume recommendation test
+                </p>    
+                <img src="../img/TTMMain1.png" class="model">
+                <!-- detail -->
+                <div class="details">
+                <p>Spend a satisfying day with a perfume that suits your situation and taste.</p>
+                <a href="https://github.com/KIMJOOYEON97/MiniProject_Perfume" style="margin-left:auto;text-decoration: none;color:rgb(252,107,54);">Link</a>
+                <br>
+                </div>
+            </div>
+        </div>
+          <div class="swiper-slide"><br></br>preparing<br></br><br></div>
+          <!-- <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div> -->
+        </div>
+    <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+  </section>
+ 
+        <!-- 목록 -->
+        <header>
+          <div class="navwrapper">
+              <nav>
+                  <ul>
+                      <br><br><br><br><br>
+                      <li id="url"><a href="../index.html" alt="메인화면">"www.rojoospace.com"</a></li>
+                      <br><br><br><br><br>
+                      <li id="search"><a href="#search_popup" alt="찾기" onclick="showPopup(false);"><img src="../img/search.png" alt="찾기"></a></li>
+                      <br><br>
+                      <li id="menu"><a href="../menu.html" alt="메뉴페이지">
+                          <div class="closebox">
+                              <div class="front">
+                                  <img src="../img/menu1.png">
+                              </div>
+                              
+                              <div class="back">
+                                  <img src="../img/menu2.png">
+                              </div>
+                          </div></a></li>
+                          <br><br>
+                          <li id="loginpage"><a href="../loginpage.html"alt="로그인">Login</a></li>
+                          <br><br>
+                          <li id="mypage"><a href="../mypage.html" alt="마이페이지">My&nbsp;Page</a></li>
+                  </ul>
+              </nav>       
+          </div>
+      </header>
+      <footer>
+              <div class="footerwrapper">
+                  <ul>
+                      <li id="bankinfo"><strong>BANK INFO</strong> 신한 110-185-785320  김주연</li>
+                      <li id="owner"><strong>COMPANY</strong> ROJOO  |  <strong>OWNER</strong> 김주연 | TEL.01076561115</li>
+                      <li id="contact"><strong>E-MAIL</strong> kimjooyeon9170@gmail.com | <strong>INSTAGRAM</strong> rojoo_perfume</li>
+                      <li>&lt;Copyright 2021. <strong>KIMJOOYEON</strong>. All rights reserved.&gt;</li>
+                  </ul>
+              </div>
+      </footer>
+
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" style="text-decoration: none;">Try Test</script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

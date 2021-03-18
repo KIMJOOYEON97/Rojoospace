@@ -1,0 +1,160 @@
+.container{
+    /* display:inline-block;  -> 이것때문에 가운데 정렬 안됌*/
+    text-align: center;
+}
+/* 장바구니 */
+aside .header_left{
+    /* display:inline-block; */
+    position: fixed;    
+    width: 2vw;
+    height: 80vh;
+    top: 40vh;
+    left: 6.5vw;
+}
+aside img{
+    width: 2vw;
+    
+}
+/* 메뉴 */
+/* 대분류 */
+span{
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(252, 107, 54);
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.menu{
+    margin:auto;
+    display: table;
+}
+.menu img{
+    width: 20vw;
+}
+/* 소분류 */
+.menu ul{
+    display: table-cell;
+    vertical-align: middle;
+    background-color:#2A4D47;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+    height:80vh;
+    list-style-type: none;
+    padding-left : 0px;
+}
+.menu li a{
+    font-family: 'Bodoni Moda', serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+   
+}
+.menu a:hover {
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(252, 107, 54);
+    text-decoration: none;
+    font-size: 1vw;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; 
+    padding: 0.5vw;
+}
+
+/* 오른쪽 메뉴 */
+div .wrapper{
+    display:inline-block;
+}
+div header{
+    position: fixed;
+    /* display:inline-block; */
+    /* float: left; */
+    /* background-color: lightgray; */
+    height: 15vh;
+    width: 2vw;
+    right: 7vw;
+    top: 10vh;
+
+}
+
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  3px;
+    position: relative;
+}
+nav .closebox .front{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+nav .closebox .back{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+nav .closebox:hover .front{
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+nav .closebox:hover .back{
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: rotate(45deg) translateX(0.5vw) translateY(0.5vw);
+    transition: 0.5s;
+}
+
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+
+/* footer info */
+.footerwrapper{ 
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footerwrapper li{
+    font-size: 0.1vw;
+}

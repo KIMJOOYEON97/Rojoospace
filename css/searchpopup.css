@@ -1,0 +1,144 @@
+/* 기본세팅 */
+#search_popup{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    align-items: fi;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, .7);   
+    /* backdrop-filter: blur(4px); */
+    /* -webkit-backdrop-filter: blur(4px); */
+    z-index: 999999999;
+}
+.search_popup{
+    border: 1px solid black;
+    background-color: #fff;
+    width: 30vw;
+    height: 40vh;
+    padding: 1vw 1vh;
+    text-align: center;
+}
+
+
+/* 팝업창 */
+#search_popup span{
+    color: rgb(252, 107, 54);
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5vw;
+}
+/* 닫기버튼 */
+#closebutton{
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+    margin-left:27vw ;
+    margin-bottom: 3vh;
+}
+/* 검색폼 안의 틀*/
+/* .search_popup .searchinner{
+    background-color: #2A4D47;
+} */
+
+/* input시 클릭하면 나오는 테두리 없애기 */
+input:focus {outline:none;}
+/* 검색바 검색폼 */
+.searchBarWp{
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin: 0.5vw;
+}
+
+.searchBarWp .barcenter{
+    text-align: center;
+}
+
+.searchBarWp .bar{
+    margin-left: 1vw;
+    width: 25vw;
+    height: 10vh;
+}
+.searchBarWp input{
+    height: 3vh;
+    width: 20vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-top: 3vh;
+   
+    
+}
+/* 검색 아이콘 */
+#searchicon{
+    cursor: pointer;
+    background-color: #2A4D47;
+    width: 1vw;
+    height: 2.5vh;
+    padding: 0.5vw;
+    position: absolute;
+    margin-top: 3vh;
+}
+/* 닫기버튼하면 닫기 */
+#search_popup.hide {
+    display: none;
+  }
+/* 추천 검색어 슬라이드 */
+.searchslide{
+    margin-top: 4vh;
+    margin-left: 5vw;
+    width: 20vw;
+    height: 5.1vh;
+    overflow: hidden;
+}
+
+.searchslide div{
+    height: 3vh;
+}
+
+.searchslide p{
+    /* padding-top: 0.5vh;
+    padding-bottom: 0.5vh; */
+    /* margin-bottom: 10vh; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    animation: searchslide 20s infinite ;
+    /* transform: translateY(-15vh); */
+}
+@keyframes searchslide{
+    0% {transform:translateY(0vh);}
+    10% {transform:translateY(0vh);}
+    20% {transform:translateY(-6vh);}
+    30% {transform:translateY(-6vh);}
+    40% {transform:translateY(-10vh);}
+    50% {transform:translateY(-10vh);}
+    60% {transform:translateY(-15vh);}
+    70% {transform:translateY(-15vh);}
+    80% {transform:translateY(-20vh);}
+    90% {transform:translateY(-20vh);}
+    100% {transform:translateY(0vh);}
+}
+
+
+
+.searchslide a{
+    color: black;
+    font-size: 1vw;
+    font-family: 'Bodoni Moda', serif;
+    text-decoration: none;
+    
+    
+    /* margin: 0;
+    padding: 0; */
+
+}
+.searchslide a:hover{
+    color: rgb(252, 107, 54);
+    font-size: 1vw;
+    font-family: 'Bodoni Moda', serif;
+    text-decoration: none;
+    b
+}

@@ -1,0 +1,44 @@
+
+.panorama {
+    margin: 3% auto;
+    cursor: all-scroll;
+  
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30%;
+  
+    background-image: url(../img/artproject.png);
+    background-size: cover;
+    background-position: 0 0;
+  
+    transition: background-position 3s linear;
+  }
+  
+  .row{
+    border: 3px solid #777;
+    /* background-color:cornsilk; */
+    vertical-align: middle;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    /* float: left; */
+    display: table-cell;
+    vertical-align: middle;
+    width: 11%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

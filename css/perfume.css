@@ -1,0 +1,207 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+section {
+  /* display: inline-block; */
+  background: cornsilk;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 70%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: cornsilk;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* perfumepage */
+#perfumehead h2{
+text-align: center;
+padding-left: 2vw;
+font-family: 'Bodoni Moda', serif;
+color: #2A4D47;
+}
+
+.swiper-slide{
+/* width: 35vw; */
+/* height: 50vh; */
+background-color: #2A4D47;
+box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.65);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+margin: 20px 10px;
+}
+.model{
+height: 350px;
+max-height: 100%;
+max-height: 100%;
+}
+.details{
+display: flex;
+flex-direction: column;
+/* text-align: center; */
+justify-content: center;
+align-items: center;
+width: 300px;
+margin: 0 auto;
+}
+.details p{
+font-family: 'Bodoni Moda', serif;
+font-weight: bold;
+color: #fff;
+text-align: center;
+/* margin-top: 20px; */
+}
+.perfume{
+color: #fff;
+font-weight: bold;
+letter-spacing: 2px;
+font-family: 'Bodoni Moda', serif;
+font-size: 25px;
+}
+
+.swiper-slide:hover{
+background-color: white;
+transform-style: preserve-3d;
+transform: scale(1.02);
+transition: all ease 0.3s;
+}
+.swiper-slide:hover .perfume{
+color: rgb(252, 107, 54);
+transition: all ease 0.5s;
+
+}
+.swiper-slide:hover p{
+color: black;
+transition: all ease 0.5s;
+
+}
+
+/* 장바구니 */
+aside .header_left{
+/* display:inline-block; */
+position: fixed;    
+width: 2vw;
+height: 80vh;
+top: 40vh;
+left: 6.5vw;
+}
+aside img{
+width: 2vw;
+
+}
+
+/* 오른쪽 메뉴바 */
+
+header{
+position: fixed;
+display:inline-block;
+/* float: left; */
+/* background-color: lightgray; */
+height: 15vh;
+width: 3vw;
+top: 10vh;
+right: 10vw;
+}
+
+nav #url a{
+text-decoration: none;
+color: black;
+font-family: 'Bodoni Moda', serif;
+font-size: 1vw;
+writing-mode: vertical-rl;
+}
+nav ul{
+/* display:inline-block; */
+list-style-type: none;
+padding-left: 0px;
+}
+nav #search a img{
+width:  1vw;
+height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+margin-left:  5px;
+position: relative;
+}
+nav .closebox .front{
+position: absolute;
+top:0;
+left: 0;
+}
+
+nav .closebox .back{
+position: absolute;
+top:0;
+left: 0;
+
+}
+
+nav .closebox img{
+height: 1vw;
+width: 1vw;
+}
+
+
+nav #loginpage a{
+text-decoration: none;
+color: black;
+font-family: 'Bodoni Moda', serif;
+font-size: 1vw;
+writing-mode:vertical-lr;
+}
+nav #mypage a{
+text-decoration: none;
+color: black;
+font-family: 'Bodoni Moda', serif;
+font-size: 1vw;
+writing-mode:vertical-lr;
+}
+/* footer info */
+.footerwrapper{ 
+text-align: center;
+background-color:#fff;
+}
+
+.footerwrapper ul{
+list-style-type: none;
+padding-left: 0px;
+}
+.footerwrapper li{
+font-size: 0.1vw;
+}
+
+
+mark{
+    background-color: rgba(0,0,0,0.5);
+    color:rgb(252,107,54);
+}

@@ -1,0 +1,257 @@
+.mainmenu{
+    /* 가운데 정렬 */
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+/* 장바구니 */
+aside .header_left{
+    /* display:inline-block; */
+    /* float: left; */
+    position: fixed;    
+    width: 2vw;
+    top: 40vh;
+    left: 6.5vw;
+}
+aside img{
+    width: 2vw;
+    
+}
+/* 오른쪽 메뉴바 */
+section{
+    /* position: relative; */
+    /* float:left; */
+    display:inline-block;
+    background-color:#2A4D47;
+    width: 80vw;
+    height:100%;
+    text-align: center;
+}
+
+div header{
+    position: fixed;
+    /* display:inline-block; */
+    /* float: left; */
+    /* background-color: lightgray; */
+    height: 15vh;
+    width: 2vw;
+    right: 7vw;
+    top: 10vh;
+}
+
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  5px;
+    position: relative;
+}
+nav .closebox .closefront{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+nav .closebox .closeback{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+
+
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+/* footer info */
+.footerwrapper{ 
+    text-align: center;
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerwrapper li{
+    font-size: 0.1vw;
+}
+
+/* 자기소개 */
+    /* 글로 소개하는 부분 */
+    /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+    /* 이미지 슬라이드 부분 */
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        margin-left: -40vw;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        font-family: 'Bodoni Moda', serif;
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+
+
+.sectionwrapper h1,h3,h4,span{
+    font-family: 'Bodoni Moda', serif;
+    color: rgb(252,107,54);
+    text-align: center;
+}
+.sectionwrapper img{
+    width: 30vw;
+} 
+
+.sectionwrapper p{
+    color: #fff;
+    font-family: sans-serif;
+    padding: 3em;
+}
+.sectionwrapper .left{
+    text-align: left;
+}
+#Contact img{
+    width: 1.5vw;
+}

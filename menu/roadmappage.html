@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roadmappage</title>
+    <link rel="stylesheet" href="../css/roadmappage.css">
+    <link rel="stylesheet" href="../css/searchpopup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/pabiicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 서치 팝업창 -->
+    <script src="../js/searchpop.js"></script>
+<!-- 커서 꾸미기용 테일 -->
+<!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script><script>
+        
+    var filter = "win16|win32|win64|mac|macintel";
+        
+        if ( navigator.platform )
+        { if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 )
+        { }
+            else {
+        
+    // var trailimage=["/artfinger/img/mouseicon.png",150]  //이미지 경로 설정 - 참고사항
+    var trailimage=["../img/cursoricon.png",150]  //이미지 경로 설정
+    var offsetfrommouse=[10,10]  //커서와 이미지의 간격
+    var displayduration=0 
+    
+    if (document.getElementById || document.all)
+        document.write('<div id="cursortailid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px;z-index:999999999999"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+    
+    function gettrailobj(){
+        if (document.getElementById)
+            return document.getElementById("cursortailid").style
+        else if (document.all)
+            return document.all.trailimagid.style
+    }
+    
+    function truebody(){
+        return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+    
+    function hidetrail(){
+        gettrailobj().visibility="hidden"
+        document.onmousemove=""
+    }
+    
+    function followmouse(e){
+    var xcoord=offsetfrommouse[0]
+    var ycoord=offsetfrommouse[1]
+        if (typeof e != "undefined"){
+            xcoord+=e.pageX
+            ycoord+=e.pageY
+        }
+        else if (typeof window.event !="undefined"){
+            xcoord+=truebody().scrollLeft+event.clientX
+            ycoord+=truebody().scrollTop+event.clientY
+        }
+    
+    var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+    var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+    
+        if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+            gettrailobj().display="none"
+            else 
+                gettrailobj().display=""
+                gettrailobj().left=xcoord+"px"
+                gettrailobj().top=ycoord+"px"
+        }
+        document.onmousemove=followmouse
+    
+    if (displayduration>0)
+        setTimeout("hidetrail()", displayduration*1000)
+                }}
+    
+    </script>
+</head>
+  
+<body>
+    <!-- 메인화면 목록 -->
+    <br><br><br>
+    <div class="mainmenu" id="original">
+        <!-- 커서 꾸미기용 테일 -->
+        <div id="cursortailid" style="position: absolute;visibility: visible; left: 200px; top: 526px; width: 1px; height: 1px; z-index: 999999999;">
+            <!-- <img src="./img/cursoricon.png" border="0" width="150px" height="undefinedpx"> -->
+        </div>
+        <aside>
+            <!-- 장바구니 -->
+            <div class="header_left" style="cursor: pointer;">
+                <a href="../shoppingbasket.html" id="basket_count"><img src="../img/shopping-basket.png" alt=""></a>
+            </div>
+        </aside>
+
+        <!-- 서치 팝업 -->
+        <div id="search_popup" class="hide">
+            <div class="search_popup">
+                <!-- 닫기버튼 -->
+                <img id ="closebutton" src="../img/close-button.png" alt="닫기" onclick="closePopup();">
+                <br>
+                <span>SEARCH</span>
+                
+                <div class="searchinner">
+                    <!-- 검색폼 -->
+                    <div>
+                        <form action="" id="searchBar" method="get" target="_self">
+                            <div class="searchBarWp">
+                                <div class="bar">
+                                    <!-- <legend>검색</legend> -->
+                                    <div class="barcenter">
+                                        <input type="text" id="searchword" placeholder="검색어를 입력해주세요">
+                                        <img id="searchicon" src="../img/searchwhite.png" alt="검색">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- 추천 검색어 슬라이드 -->
+                    <div class="searchslide">
+                        <div><p><a href="">S/S Perfume</a></p></div>
+                        <div><p><a href="">Before 2020, ArtWork</a></p></div>
+                        <div><p><a href="">Today To Me, Perfume recommend</a></p></div>
+                        <div><p><a href="">What made her this way?</a></p></div>
+                        <div><p><a href="">Future Plan</a></p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- 로드맵 -->
+        <section>
+            <h1 id ="timetitle">ROJOO's <span>HISTORY</span></h1>
+            <br>
+            <div class="process-wrapper">
+                <div id="progress-bar-container">
+                    <ul>
+                        <li class="step step01 active"><div class="step-inner">2021 </div></li>
+                        <li class="step step02"><div class="step-inner">2022</div></li>
+                        <li class="step step03"><div class="step-inner">2025</div></li>
+                        <li class="step step04"><div class="step-inner">2030</div></li>
+                        <li class="step step05"><div class="step-inner">2035</div></li>
+                    </ul>
+                    
+                    <div id="line">
+                        <div id="line-progress"></div>
+                    </div>
+                </div>
+                
+                <div id="progress-content-section">
+                    <div class="section-content discovery active">
+                        <h2>2021 Completion of education</h2>
+                        <p>국비지원교육을 수료한 후, 풀스택 개발자로 취직을 하게 된다. 회사생활에 적응하면서 지속적인 개발스터디를 한다. 
+                           <br><br> 퀀트 투자 프로그램을 개인프로젝트로 진행하기위해서 경제와 주식공부를 함께 하게 된다.
+                           <br><br> 취미인 향수를 본격적으로 시작하여 조향사 자격증을 따기위해서 조향공부를 9월달부터 시작하게 된다.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content strategy">
+                        <h2>2022 Starting point</h2>
+                        <p>신입개발자로서 개발자일을 꾸준히 해나간다. 개발자 일을 하면서 일의 루틴에 익숙하지는 것이 아니라
+                            <br><br> 항상 새로운 방식으로 생각할 수 있는 생각의 힘을 기르기위해 개발 스터디와 개발 이외의 공부를 병행한다.
+                            <br><br> 퀀트 투자 프로그램을 서서히 시작하기로 하면서 경제와 금융관련 개발자들과 모임을 가지게 된다.
+                            <br><br> 조향사 자격증을 취득한 후에 나만의 향 브랜드를 만들어 핸드메이드 페어에 참가한다. 디퓨저와 룸스프레이를 판매해보기 시작한다.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content creative">
+                        <h2>2025 Developer</h2>
+                        <p>개발자로 일한지 3년 일이 어느정도 익숙해지기 시작하면서, 2022년에 시작해두었던 향브랜드 사업, 퀀트 투자트로그램을
+                            <br><br> 개발과 접목시켜 발전시킨다. 예술가들의 작품을 좀 더 자세하고 빠르게 공유할 수 있는 플랫폼 사업 계획서를 작성한다.
+                            <br><br> 또한, 나 자신의 작품을 예술 단체에서 꾸준히 출품하고 관객들과 소통하여 플랫폼 사업의 방향성을 잡는다.
+                        </p>
+                    </div>
+                    
+                    <div class="section-content production">
+                        <h2>2030 doing well.</h2>
+                        <p> 여러가지 일들을 접하면서 사회적으로도 내적으로도 많은 성장을 하게된다. 여전히 개발자 일을 하고 있으며, 회사도 다니고 있을 것이다.
+                        <br><br> 회사에서는 크고 작은 프로젝트를 하면서 사람들의 인정도, 스스로에 대한 신뢰도 얻게 된다.
+                        <br><br> 진행하고 있는 회사일 외의 일들을 조금씩 키워나간다.
+
+                        </p>
+                    </div>
+                    
+                    <div class="section-content analysis">
+                        <h2>2035 I'm 39years-old.</h2>
+                        <p> 마흔을 앞두고, 내가 더 할 수 있는 일이 무엇인지에 대해 고민해본다. 향브랜드가 만들어진지 13년차 되며,
+                        <br><br> 퀀트 투자 프로그램을 알아간지 10년정도 되어간다. 예술가들의 작품을 공유하고 판매하는 플랫폼 사업을 본격적으로 시작한다.
+                        <br><br> 20대인 내가 생각하지 못한 무언가가 있을 것이라고 생각한다. 그렇기때문에 어떤 것에 무게를 두고 살지는 모르지만,
+                        </p>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- 목록 -->
+        <header>
+            <div class="navwrapper">
+                <nav>
+                    <ul>
+                        <br><br><br><br><br>
+                        <li id="url"><a href="../index.html" alt="메인화면">"www.rojoospace.com"</a></li>
+                        <br><br><br><br><br>
+                        <li id="search"><a href="#search_popup" alt="찾기" onclick="showPopup(false);"><img src="../img/search.png" alt="찾기"></a></li>
+                        <br><br>
+                        <li id="menu"><a href="../menu.html" alt="메뉴페이지">
+                            <div class="closebox">
+                                <div class="front">
+                                    <img src="../img/menu1.png">
+                                </div>
+                                
+                                <div class="back">
+                                    <img src="../img/menu2.png">
+                                </div>
+                            </div></a></li>
+                            <br><br>
+                            <li id="loginpage"><a href="../loginpage.html"alt="로그인">Login</a></li>
+                            <br><br>
+                            <li id="mypage"><a href="../mypage.html" alt="마이페이지">My&nbsp;Page</a></li>
+                        </ul>
+                    </nav>       
+                </div>
+            </header>
+            <footer>
+                <div class="footerwrapper">
+                    <ul>
+                        <li id="bankinfo"><strong>BANK INFO</strong> 신한 110-185-785320  김주연</li>
+                        <li id="owner"><strong>COMPANY</strong> ROJOO  |  <strong>OWNER</strong> 김주연 | TEL.01076561115</li>
+                        <li id="contact"><strong>E-MAIL</strong> kimjooyeon9170@gmail.com | <strong>INSTAGRAM</strong> rojoo_perfume</li>
+                        <li>&lt;Copyright 2021. <strong>KIMJOOYEON</strong>. All rights reserved.&gt;</li>
+                    </ul>
+                </div>
+                
+            </footer>
+        </div>
+        <script>
+    
+        $(".step").click( function() {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+        
+        $(".step01").click( function() {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step02").click( function() {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step03").click( function() {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step04").click( function() {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+        
+        $(".step05").click( function() {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+        
+        </script>
+        </body>
+        </html>

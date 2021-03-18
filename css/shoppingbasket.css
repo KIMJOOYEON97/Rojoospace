@@ -1,0 +1,223 @@
+.mainmenu{
+    /* 가운데 정렬 */
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+/* 오른쪽 메뉴바 */
+div section{
+    /* position: relative; */
+    /* float:left; */
+    display:inline-block;
+    background-color:#2A4D47;
+    width: 80vw;
+    height:100%;
+}
+div header{
+    position: fixed;
+    display:inline-block;
+    /* float: left; */
+    /* background-color: lightgray; */
+    height: 15vh;
+    width: 3vw;
+}
+
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  5px;
+    position: relative;
+}
+nav .closebox .front{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+nav .closebox .back{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+
+
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+/* footer info */
+.footerwrapper{ 
+    text-align: center;
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerwrapper li{
+    font-size: 0.1vw;
+}
+/* 장바구니 */
+.container{
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.container > h1{
+    color: #fff;
+    padding: 20px 0
+}
+.remove{
+    width: 1.1vw;
+    height: 1.1vw;
+    margin-right: 0.2vw;
+    font-size: 0.7em;
+}
+.cart{
+    display: inline-block;
+    width: 50vw;
+}
+.products{
+    /* display: inline-block; */
+    flex: 0.75;
+}
+
+.product{
+    /* display: inline-block; */
+    display: flex;
+    background-color: cornsilk;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(252, 107, 54);
+    margin-bottom: 3vh;
+    /* text-align: center; */
+}
+.product:hover{
+    background-color: cornsilk;
+    border: none;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+.product > img{
+    margin: auto;
+    width: 15vw;
+    height:15vw;
+    object-fit: cover;
+}
+.product >img:hover{
+    transform: scale(1.04);
+}
+.product-info{
+    padding: 1.5vh;
+    width: 100%;
+    position: relative;
+}
+.product-remove{
+    position: absolute;
+    bottom: 0.7vh;
+    right: 1vw;
+    padding: 0.5vh 1vw;
+    background-color: rgb(252, 107, 54);
+    color: black;
+    cursor: pointer;
+}
+
+.product-remove:hover{
+    background-color: white;
+    color: #2A4D47;
+    border: 1px solid #2A4D47;
+}
+
+.product-quantity > input{
+    width: 2vw;
+    padding: 0.5vh;
+    text-align:center;
+}
+.cart-total{
+    width: 45vw;
+    flex: 0.25;
+    padding: 2.5vw;
+    border: 1px solid black;
+    margin-bottom: 3vh;
+}
+.cart-total p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 1vw;
+    padding: 1vh 1vw;
+    background-color: rgba(300, 300, 300, 0.5);
+}
+.cart-total a{
+    font-size: 1vw;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color:cornsilk;
+    color: black;
+}
+.cart-total a:hover{
+    background-color: crimson;
+}
+@media screen and (max-width: 700px){
+    .remove{
+        display: none;
+    }
+    .product{
+        height: 150px;
+    }
+    .product >img{
+        height: 150px;
+        width: 200px;
+    }
+    .product-name, .product-price{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .cart{
+        flex-direction: column;
+    }
+    .cart-total{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1220px){
+    .container{
+        max-width: 95%;
+    }
+}

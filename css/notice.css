@@ -1,0 +1,138 @@
+.mainmenu{
+    /* 가운데 정렬 */
+    text-align: center;
+}
+/* 장바구니 */
+aside .header_left{
+    /* display:inline-block; */
+    /* float: left; */
+    position: fixed;    
+    width: 2vw;
+    top: 40vh;
+    left: 6.5vw;
+}
+aside img{
+    width: 2vw;
+    
+}
+/* 오른쪽 메뉴바 */
+div section{
+    /* position: relative; */
+    /* float:left; */
+    display:inline-block;
+    background-color:#2A4D47;
+    width: 80vw;
+    height:80vh;
+}
+
+div header{
+    position: fixed;
+    /* display:inline-block; */
+    /* float: left; */
+    /* background-color: lightgray; */
+    height: 15vh;
+    width: 2vw;
+    right: 7vw;
+    top: 10vh;
+}
+
+nav #url a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode: vertical-rl;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+}
+nav #search a img{
+    width:  1vw;
+    height:  1vw;
+}
+/* 메뉴가 x표시로 변하는 부분 */
+nav .closebox {
+    margin-left:  5px;
+    position: relative;
+}
+nav .closebox .closefront{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+nav .closebox .closeback{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+
+nav .closebox img{
+    height: 1vw;
+    width: 1vw;
+}
+
+
+nav #loginpage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+nav #mypage a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1vw;
+    writing-mode:vertical-lr;
+}
+/* footer info */
+.footerwrapper{ 
+    text-align: center;
+    background-color:#fff;
+}
+
+.footerwrapper ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerwrapper li{
+    font-size: 0.1vw;
+}
+
+/* 알림페이지 */
+.sectionwrapper img{
+    width: 15vw;
+}
+.sectionwrapper ul{
+    background-color:#2A4D47;
+    margin: 0 auto;
+    text-align: center;
+    /* width: 80vw;
+    height:80vh; */
+    list-style-type: none;
+    padding-left : 0px;
+    width: 80vw;
+    height: 80vh;
+}
+.sectionwrapper li {
+    font-family: 'Bodoni Moda', serif;
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+div #noticeInfo {
+    background-color:cornsilk;
+    border: 2px solid rgb(252, 107, 54);
+    
+    margin: 0 auto;
+    width: 50vw;
+    height: 45vh;
+    font-weight: bold;
+    margin-top: 2vh;
+}

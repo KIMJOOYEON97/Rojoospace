@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selfintroduce</title>
+    <link rel="stylesheet" href="../css/selfintroduce.css">
+    <link rel="stylesheet" href="../css/searchpopup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/pabiicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+    <script src="../js/selfintroduce.js"></script>
+<!-- 서치 팝업창 -->
+    <script src="../js/searchpop.js"></script>
+<!-- 커서 꾸미기용 테일 -->
+<!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script><script>
+        
+    var filter = "win16|win32|win64|mac|macintel";
+        
+        if ( navigator.platform )
+        { if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 )
+        { }
+            else {
+        
+    // var trailimage=["/artfinger/img/mouseicon.png",150]  //이미지 경로 설정 - 참고사항
+    var trailimage=["../img/cursoricon.png",150]  //이미지 경로 설정
+    var offsetfrommouse=[10,10]  //커서와 이미지의 간격
+    var displayduration=0 
+    
+    if (document.getElementById || document.all)
+        document.write('<div id="cursortailid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px;z-index:999999999999"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+    
+    function gettrailobj(){
+        if (document.getElementById)
+            return document.getElementById("cursortailid").style
+        else if (document.all)
+            return document.all.trailimagid.style
+    }
+    
+    function truebody(){
+        return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+    
+    function hidetrail(){
+        gettrailobj().visibility="hidden"
+        document.onmousemove=""
+    }
+    
+    function followmouse(e){
+    var xcoord=offsetfrommouse[0]
+    var ycoord=offsetfrommouse[1]
+        if (typeof e != "undefined"){
+            xcoord+=e.pageX
+            ycoord+=e.pageY
+        }
+        else if (typeof window.event !="undefined"){
+            xcoord+=truebody().scrollLeft+event.clientX
+            ycoord+=truebody().scrollTop+event.clientY
+        }
+    
+    var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+    var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+    
+        if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+            gettrailobj().display="none"
+            else 
+                gettrailobj().display=""
+                gettrailobj().left=xcoord+"px"
+                gettrailobj().top=ycoord+"px"
+        }
+        document.onmousemove=followmouse
+    
+    if (displayduration>0)
+    setTimeout("hidetrail()", displayduration*1000)
+}}
+
+</script>
+</head>
+
+<body>
+    <br><br><br>
+    <div id="cursortailid" style="position: absolute;visibility: visible; left: 200px; top: 526px; width: 1px; height: 1px; z-index: 999999999;">
+        <!-- <img src="./img/cursoricon.png" border="0" width="150px" height="undefinedpx"> -->
+    </div>
+    <div class="mainmenu" id="original">
+    <aside>
+        <!-- 장바구니 -->
+        <div class="header_left" style="cursor: pointer;">
+            <a href="./shoppingbasket.html" id="basket_count"><img src="../img/shopping-basket.png" alt=""></a>
+        </div>
+    </aside>
+    <section>
+        <div class="sectionwrapper">
+            <img src="../img/decotop.png" alt="">
+            <h1>About Owner,Rojoo</h1>
+            <div class="info">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Intro')">소개글</button>
+                    <button class="tablinks" onclick="openCity(event, 'Profile')">프로필</button>
+                    <button class="tablinks" onclick="openCity(event, 'Contact')">Contect</button>
+                    <button class="tablinks" onclick="openCity(event, 'developer')">웹 개발자로의 전향동기</button>
+                    <button class="tablinks" onclick="openCity(event, 'perfume')">향수에 대해</button>
+                    <button class="tablinks" onclick="openCity(event, 'young')">어린시절</button>
+                </div>
+                  
+                  <!-- Tab content -->
+                  <div id="Intro" class="tabcontent" style="display: block;">
+                    <h3>안녕하세요.</h3>
+                    <p>예비 풀스택 개발자이자, 예술가이자, 조향사를 꿈꾸는 김주연입니다.
+                        <br><br>이 페이지는 저에 대한 이야기들을 담았습니다.(위의 바를 클릭하시면 됩니다.)
+                        <br><br>저에 대한 소개 영상과 저의 사진들은 아래 이미지를 클릭하시면 나옵니다.
+                    </p>
+                  </div>
+                  
+                  <div id="Profile" class="tabcontent">
+                      <h3>김주연 (JOOYEON KIM)</h3>
+                      <p>
+                          <br> 생년월일: 1997년 9월 1일생
+                          <br> 주소지: 서울시 강남구 역삼2동 언주로332
+                      </p>      
+                          <h4>학력 사항</h4>
+                          <p> 2016년 3월 - 2020년 2월 가천대학교 회화조소과 서양화과</p>
+                          <br><br>
+                          <h4 style="text-align: left; margin-left: 3em;">교육 사항</h4>
+                          <p class="left">
+                              2020년 4월 - 10월
+                              <br>교육 기관: KG IT교육원
+                              <br>교육 과목: 파이썬, 리눅스, JAVA(단과 과목 수강)
+                              <br>
+                              <br>2020년 12월 2일 - 2021년 7월 8일
+                              <br>교육 기관: KH정보교육원
+                              <br>교육 과목: 스마트 콘텐츠 융합 응용 SW 엔지니어 양성 과정
+                              <br>교육 내용:
+                              **JAVA** (Servlet, JSP, jdbc, Spring Framework, Mybatis, Ajax)
+                              <br>
+                              **Oracle SQL RDBMS**
+                              <br>
+                              **HTML5, CSS3, JavaScript, JQuery**
+                          </p>
+                    </div>
+                    
+                    <div id="Contact" class="tabcontent">
+                      <h3>Contect</h3>
+                      <p> 이메일: kimjooyeon9170@gmail  /jy132410@naver.com</p>
+                      <p> 전화: 010-7656-1115</p>
+                      <span>GitHub : </span><a href="https://github.com/KIMJOOYEON97" target="_blank"><img src="../img/github.png" ></a>
+                      <br>
+                      <span>Instagram : </span><a href="https://www.instagram.com/rojoo_perfume/" target="_blank"><img src="../img/instagram.png" alt=""></a>
+                      <br>
+                      <span>Notion : </span><a href="https://www.notion.so/f585c00725804e59b9dd8eb8e574fb7b" target="_blank"><img src="../img/notion.png" alt=""></a>
+                    </div>
+
+                    <div id="developer" class="tabcontent">
+                        <h3>웹 개발자로의 전향동기</h3>
+                        <p>미술 선생님이 되려고 했던 이유는 동시대를 살아가는 사람들에게 미술이라는 것을 통해서
+                            <br><br>함께 공감하고 소통하며 위안을 받기도하며 발전하고싶었기 때문입니다.
+                            <br><br>이런 제가을 웹 개발자가 되어야겠다고 생각했던 이유는 앞으로 사회에서 
+                            <br><br>재능을 나누고 함께 발전해나가기 위해서는 IT지식이 꼭 필요하고 생각했습니다. 
+                            <br><br>그리고 IT에 관해 알아갈 수록, 지식의 실체화와 공유가 이루어지는 것을 보고 IT쪽을 공부해야겠다고 결심했습니다.
+                            
+                        </p>
+                    </div>
+
+                    <div id="perfume" class="tabcontent">
+                        <h3>향수에 대해</h3>
+                        <p>20살때부터 양초에 관심이 많아서 양초공예를 배우기 시작했고, 그 이후로 지속적으로 향에 대해 관심이 있었습니다.
+                        <br><br>그러다보니 자연스럽게 향수에 관심을 가지게 되었고, 향수가 어떻게 만들어지는지 관심이 생겼습니다.
+                        <br><br> 그래서 향수 원자재 시장에 가서 원료들을 보고, 조향해보는 취미가 생기게 되었습니다. 
+                        <br><br> 주변사람들에게 어울리는 향을 선물해주고, 저만의 향을 만들다보니 저만의 브랜드를 만들고 싶다는 생각이 들었습니다.
+                        <br><br> 그렇게 이어져서 지금은, 저만의 향 브랜드를 만드는 것이 목표입니다. </p>
+                    </div>
+                  
+                    <div id="young" class="tabcontent">
+                        <h3>어린 시절 -미술을 하게된 계기</h3>
+                        <p>3살 터울인 여동생과 함께 유년시절을 함께보낸 저는, 여동생과 함께 그림그리는 시간이 많았습니다.
+                            <br><br> 둘 다 활발한 성격은 아니였어서 주로 함께 집에서 놀았습니다. 
+                            <br><br> 그래서 그런지 저는 미술쪽을 전공하게 되었고 동생은 어학과 문학쪽을 전공하게 되었어요.
+                            <br><br> 제가 본격적으로 미술을 하게 된 계기는 사실 없습니다. 자연스럽게 좋아하게 되었고 그러다보니 자주 접하게 되었고,
+                            <br><br> 잘하게 되어서, 좋아하는 것을 잘하는 운이 좋은 아이였습니다. 하지만 항상 잘하고 좋아할 수는 없었습니다.
+                            <br><br> 그래서 미술이 저에게 잘해야한다는 부담감을 주는 때에, 미술학원에서 미술 선생님이 가르침을 받고, 그림의 매력에 정말 빠지게 되었습니다.
+                            <br><br> 저는 그 때 경험을 통해서 미술선생님이 되어야겠다고 결심했었습니다. 
+                        </p>
+                    </div>
+                
+            </div>
+            <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="../img/selfintro/selfi.png" style="width:40%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <iframe width="1000" height="600" 
+                src="https://www.youtube.com/embed/dkwqYY8_Nw4" 
+                frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen></iframe>
+
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src="../img/selfintro/yonger2.png" style="width:40%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="../img/selfintro/yonger3.png" style="width:40%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="../img/selfintro/yonger4.png" style="width:40%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="../img/selfintro/yonger1.png" style="width:40%">  
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/selfi.png" style="width:100%" onclick="currentSlide(1)" alt="Now my selfi">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/selfintro.png" style="width:100%" onclick="currentSlide(2)" alt="Personal Q&A Video">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/yonger2.png" style="width:100%" onclick="currentSlide(3)" alt="When i was young1(I love milk..)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/yonger3.png" style="width:100%" onclick="currentSlide(4)" alt="When i was young2">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/yonger4.png" style="width:100%" onclick="currentSlide(5)" alt="When i was young3(I loved hellokitty)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/selfintro/yonger1.png" style="width:100%" onclick="currentSlide(6)" alt="When i was young4">
+            </div>
+            </div>
+        </div>
+        <img src="../img/decobottom.png" alt="">
+
+
+
+      
+        <div class="young">
+
+        </div>
+        <div class="student">
+
+        </div>
+        <div class="now">
+
+        </div>
+    </div>
+</section>
+
+<div class="mainmenu" id="original">
+    <!-- 커서 꾸미기용 테일 -->
+    <div id="cursortailid" style="position: absolute;visibility: visible; left: 200px; top: 526px; width: 1px; height: 1px; z-index: 999999999;">
+        <!-- <img src="./img/cursoricon.png" border="0" width="150px" height="undefinedpx"> -->
+    </div>
+    <!-- 서치 팝업 -->
+    <div id="search_popup" class="hide">
+        <div class="search_popup">
+            <!-- 닫기버튼 -->
+            <img id ="closebutton" src="../img/close-button.png" alt="닫기" onclick="closePopup();">
+            <br>
+            <span>SEARCH</span>
+            
+            <div class="searchinner">
+                <!-- 검색폼 -->
+                <div>
+                    <form action="" id="searchBar" method="get" target="_self">
+                        <div class="searchBarWp">
+                            <div class="bar">
+                                <!-- <legend>검색</legend> -->
+                                <div class="barcenter">
+                                    <input type="text" id="searchword" placeholder="검색어를 입력해주세요">
+                                    <img id="searchicon" src="../img/searchwhite.png" alt="검색">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- 추천 검색어 슬라이드 -->
+                <div class="searchslide">
+                    <div><p><a href="">S/S Perfume</a></p></div>
+                    <div><p><a href="">Before 2020, ArtWork</a></p></div>
+                    <div><p><a href="">Today To Me, Perfume recommend</a></p></div>
+                    <div><p><a href="">What made her this way?</a></p></div>
+                    <div><p><a href="">Future Plan</a></p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- 목록 -->
+    <header>
+        <div class="navwrapper">
+            <nav>
+                <ul>
+                    <br><br><br><br><br>
+                    <li id="url"><a href="../index.html" alt="메인화면">"www.rojoospace.com"</a></li>
+                    <br><br><br><br><br>
+                    <li id="search"><a href="#search_popup" alt="찾기" onclick="showPopup(false);"><img src="../img/search.png" alt="찾기"></a></li>
+                    <br><br>
+                    <li id="menu"><a href="../menu.html" alt="메뉴페이지">
+                        <div class="closebox">
+                            <div class="closefront">
+                                <img src="../img/menu1.png">
+                            </div>
+                            
+                            <div class="closeback">
+                                <img src="../img/menu2.png">
+                            </div>
+                        </div></a></li>
+                        <br><br>
+                        <li id="loginpage"><a href="../loginpage.html"alt="로그인">Login</a></li>
+                        <br><br>
+                        <li id="mypage"><a href="../mypage.html" alt="마이페이지">My&nbsp;Page</a></li>
+                    </ul>
+                </nav>       
+            </div>
+        </header>
+        <footer>
+            <div class="footerwrapper">
+                <ul>
+                    <li id="bankinfo"><strong>BANK INFO</strong> 신한 110-185-785320  김주연</li>
+                    <li id="owner"><strong>COMPANY</strong> ROJOO  |  <strong>OWNER</strong> 김주연 | TEL.01076561115</li>
+                    <li id="contact"><strong>E-MAIL</strong> kimjooyeon9170@gmail.com | <strong>INSTAGRAM</strong> rojoo_perfume</li>
+                    <li>&lt;Copyright 2021. <strong>KIMJOOYEON</strong>. All rights reserved.&gt;</li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
+    </div>  
+</body>
+</html>
