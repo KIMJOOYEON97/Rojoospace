@@ -23,62 +23,57 @@ Rojoospace, 로주의 공간
 
 1. 메인index
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46dfff7c-67f8-445b-9ec1-894f9e1aaeb4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46dfff7c-67f8-445b-9ec1-894f9e1aaeb4/Untitled.png)
+   ![main_3](https://user-images.githubusercontent.com/67991236/111753664-7ad59d80-88da-11eb-919a-08749591c42f.jpg)
+
 
 2. 서브메뉴
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fd2210a9-4f3d-4c00-8e6e-e6916f10d29f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fd2210a9-4f3d-4c00-8e6e-e6916f10d29f/Untitled.png)
+   ![main_4](https://user-images.githubusercontent.com/67991236/111753796-9c368980-88da-11eb-9a59-3e4688faf463.jpg)
+
 
 3. Infomation
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae02954c-c3bd-464c-830f-57da6b0d49f6/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae02954c-c3bd-464c-830f-57da6b0d49f6/Untitled.png)
+   ![main_5](https://user-images.githubusercontent.com/67991236/111753979-d0aa4580-88da-11eb-81fa-43c7802b1ed7.jpg)
 
 4. Shop
     1. art project
-
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bb59c0f8-653a-4c99-9708-b9c15ea71ae7/art.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bb59c0f8-653a-4c99-9708-b9c15ea71ae7/art.jpg)
-
+![art](https://user-images.githubusercontent.com/67991236/111754037-def86180-88da-11eb-9ebe-bf7609bf6ec8.jpg)
     2. perfume
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6ce45bf-7c05-4bb2-b8ca-6bf93a867fe3/shop.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6ce45bf-7c05-4bb2-b8ca-6bf93a867fe3/shop.jpg)
-
+       ![shop](https://user-images.githubusercontent.com/67991236/111754105-f3d4f500-88da-11eb-908a-eeb1196db0d0.jpg)
 5. Interview
     1. RodeMap
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/20e9ac17-9e5b-4a24-8105-6bbf64cc9a09/main.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/20e9ac17-9e5b-4a24-8105-6bbf64cc9a09/main.jpg)
-
+       ![main](https://user-images.githubusercontent.com/67991236/111754376-46161600-88db-11eb-8d50-2e9c605c3744.jpg)
     2. Selfintroduce
+![inter2](https://user-images.githubusercontent.com/67991236/111754261-22eb6680-88db-11eb-85de-528e4ea8b79c.jpg)
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b91c528e-15b2-422d-9961-de38a020e3f4/inter2.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b91c528e-15b2-422d-9961-de38a020e3f4/inter2.jpg)
 
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33bce63b-beca-45a7-bc7a-692ec4bd92ef/interview.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33bce63b-beca-45a7-bc7a-692ec4bd92ef/interview.jpg)
+        ![interview](https://user-images.githubusercontent.com/67991236/111754318-31398280-88db-11eb-8798-f52944900edb.jpg)
 
 6. Shopping basket
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1eaf74d9-8b44-48eb-8a8d-a230f49ac530/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1eaf74d9-8b44-48eb-8a8d-a230f49ac530/Untitled.png)
+    ![main_7](https://user-images.githubusercontent.com/67991236/111754694-a311cc00-88db-11eb-89cc-fe2cc3b44a12.jpg)
 
 7. search bar
+![main_6](https://user-images.githubusercontent.com/67991236/111754549-778ee180-88db-11eb-884c-789c262678e4.jpg)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c940239e-7a79-4772-96f1-653a88e325b3/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c940239e-7a79-4772-96f1-653a88e325b3/Untitled.png)
 
 8. Login
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7aafece6-b3c0-44ae-a22a-6489595f7a1a/first.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7aafece6-b3c0-44ae-a22a-6489595f7a1a/first.jpg)
+   ![first](https://user-images.githubusercontent.com/67991236/111754823-c6d51200-88db-11eb-83af-7071d78b7176.jpg)
 
 9. Join membership
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c6a7c2d-d77f-4145-ae25-58aa2f8402c7/join.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c6a7c2d-d77f-4145-ae25-58aa2f8402c7/join.jpg)
+    ![join](https://user-images.githubusercontent.com/67991236/111754754-b329ab80-88db-11eb-865c-f2715cd10a18.jpg)
 
 10. Find Id & Password
+![id](https://user-images.githubusercontent.com/67991236/111754881-d3f20100-88db-11eb-8a1c-4751479fb6c7.jpg)
+![pw](https://user-images.githubusercontent.com/67991236/111754870-d18fa700-88db-11eb-8f79-f0666a069e2b.jpg)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aea2baa6-5c7e-4e80-b767-bb81b2a75130/id.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aea2baa6-5c7e-4e80-b767-bb81b2a75130/id.jpg)
-
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b77b2348-5716-4779-a400-11a99cfe4ea6/pw.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b77b2348-5716-4779-a400-11a99cfe4ea6/pw.jpg)
 
 11. my page
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fff899c7-c50d-478c-95c3-10efefa2ddf5/mypage.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fff899c7-c50d-478c-95c3-10efefa2ddf5/mypage.jpg)
-
+![mypage](https://user-images.githubusercontent.com/67991236/111754966-ee2bdf00-88db-11eb-9214-1dac3b4851a6.jpg)
 # 4. 구현 주안점
 
 - 컨텐츠에 어울리는 화면 구성
