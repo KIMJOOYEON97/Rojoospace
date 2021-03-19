@@ -3,6 +3,8 @@
 
 Rojoospace, 로주의 공간
 
+link: https://kimjooyeon97.github.io/Rojoospace/
+
 로주가 누구인지 궁금하신가요?
 
 개발자이자 예술가이자 조향사를 꿈꾸는 로주의 공간을 소개합니다.
