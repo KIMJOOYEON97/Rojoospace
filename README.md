@@ -9,9 +9,10 @@ Rojoospace, 로주의 공간
 
 개인적인 이야기(과거부터 미래까지)와 향수와 작품들까지 소개하고 소장할 수 있는 특별한 공간에 함께 참여해보세요!
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46dfff7c-67f8-445b-9ec1-894f9e1aaeb4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46dfff7c-67f8-445b-9ec1-894f9e1aaeb4/Untitled.png)
+![main_2](https://user-images.githubusercontent.com/67991236/111753366-203c4180-88da-11eb-8c61-637acf105218.jpg)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/600cf11e-53c2-4a57-8980-2df632c4f714/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/600cf11e-53c2-4a57-8980-2df632c4f714/Untitled.png)
+![main_1](https://user-images.githubusercontent.com/67991236/111753464-3e09a680-88da-11eb-99fc-d320c0732a71.jpg)
+
 
 # 2. 프로젝트 요구사항
 
