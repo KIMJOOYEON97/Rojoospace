@@ -91,12 +91,12 @@ input:focus {outline:none;}
     margin-top: 4vh;
     margin-left: 5vw;
     width: 20vw;
-    height: 5.1vh;
+    height: 5vh;
     overflow: hidden;
 }
 
 .searchslide div{
-    height: 3vh;
+    height: 3.6vh;
 }
 
 .searchslide p{
